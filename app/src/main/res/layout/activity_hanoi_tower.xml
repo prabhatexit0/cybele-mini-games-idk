@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".towerofhanoi.HanoiTower">
+
+    <TextView
+        android:id="@+id/hanoiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOWER OF HANOI"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/redpink"
+        android:fontFamily="@font/staat"
+
+        android:layout_centerHorizontal="true"/>
+
+
+    <RelativeLayout
+        android:id="@+id/oneTower"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/hanoiTitle">
+
+        <View
+
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black" />
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black" />
+
+<!--        LAYER ONE-->
+        <View
+            android:id="@+id/oneL1e"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/hred" />
+
+        <View
+            android:id="@+id/oneL1d"
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/hvoilet" />
+
+        <View
+            android:id="@+id/oneL1c"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/hyellow" />
+
+        <View
+            android:id="@+id/oneL1b"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/hblue" />
+
+        <View
+            android:id="@+id/oneL1a"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/hgreen" />
+
+<!--        LAYER TWO-->
+        <View
+            android:id="@+id/oneL2e"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:background="@color/hred" />
+
+        <View
+            android:id="@+id/oneL2d"
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:background="@color/hvoilet" />
+
+        <View
+            android:id="@+id/oneL2c"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:background="@color/hyellow" />
+
+        <View
+            android:id="@+id/oneL2b"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:background="@color/hblue" />
+
+        <View
+            android:id="@+id/oneL2a"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:background="@color/hgreen" />
+
+<!--        LAYER THREE-->
+        <View
+            android:id="@+id/oneL3e"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:background="@color/hred" />
+
+        <View
+            android:id="@+id/oneL3d"
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:background="@color/hvoilet" />
+
+        <View
+            android:id="@+id/oneL3c"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:background="@color/hyellow" />
+
+        <View
+            android:id="@+id/oneL3b"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:background="@color/hblue" />
+
+        <View
+            android:id="@+id/oneL3a"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:background="@color/hgreen" />
+
+<!--        LAYER FOUR-->
+        <View
+            android:id="@+id/oneL4e"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="85dp"
+            android:background="@color/hred" />
+
+        <View
+            android:id="@+id/oneL4d"
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="85dp"
+            android:background="@color/hvoilet" />
+
+        <View
+            android:id="@+id/oneL4c"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="85dp"
+            android:background="@color/hyellow" />
+
+        <View
+            android:id="@+id/oneL4b"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="85dp"
+            android:background="@color/hblue" />
+
+        <View
+            android:id="@+id/oneL4a"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="85dp"
+            android:background="@color/hgreen" />
+
+<!--     Layer Five-->
+        <View
+            android:id="@+id/oneL5e"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="110dp"
+            android:background="@color/hred" />
+
+        <View
+            android:id="@+id/oneL5d"
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="110dp"
+            android:background="@color/hvoilet" />
+
+        <View
+            android:id="@+id/oneL5c"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="110dp"
+            android:background="@color/hyellow" />
+
+        <View
+            android:id="@+id/oneL5b"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="110dp"
+            android:background="@color/hblue" />
+
+        <View
+            android:id="@+id/oneL5a"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="110dp"
+            android:background="@color/hgreen" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

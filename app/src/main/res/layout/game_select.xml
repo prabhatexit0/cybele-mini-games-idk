@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selectLayoutId"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_margin="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/selection_cards">
+
+
+    <TextView
+        android:id="@+id/selectItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIC\nTAC\nTOE"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/staat"
+
+        android:layout_gravity="center|start"
+        android:layout_marginLeft="40dp" />
+
+    <ImageView
+        android:id="@+id/selectItemImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center|end"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/tictactoe"
+        android:padding="20dp"/>
+
+</FrameLayout>

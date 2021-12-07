@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".towerofhanoi.TowerOfHanoi"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tohTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tower Of Hanoi"
+        android:textSize="45dp"
+        android:fontFamily="@font/staat"
+        android:textColor="@color/redpink"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/towerOne"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_below="@+id/tohTitle"
+        android:layout_marginTop="50dp"
+        android:onClick="clickTowerOne">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"/>
+
+
+        <View
+            android:id="@+id/bigTone1"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@color/redpink"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <View
+            android:id="@+id/bigTone2"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@color/redpink"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/bigTone3"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@color/redpink"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/medTone1"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:background="@color/darkblue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/medTone2"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:background="@color/darkblue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+
+            />
+
+        <View
+            android:id="@+id/medTone3"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:background="@color/darkblue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/smallTone1"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/blue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/smallTone2"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/blue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/smallTone3"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/blue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/towerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_below="@+id/towerOne"
+        android:layout_marginTop="50dp"
+        android:onClick="clickTowerTwo">
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black" />
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black" />
+
+
+        <View
+            android:id="@+id/bigTwo1"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@color/redpink"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/bigTwo2"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@color/redpink"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/bigTwo3"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@color/redpink"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/medTwo1"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:background="@color/darkblue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/medTwo2"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:background="@color/darkblue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/medTwo3"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:background="@color/darkblue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/smallTwo1"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/blue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/smallTwo2"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/blue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/smallTwo3"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/blue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/towerThree"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_below="@+id/towerTwo"
+        android:layout_marginTop="50dp"
+        android:onClick="clickTowerThree">
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"/>
+
+
+        <View
+            android:id="@+id/bigThree1"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@color/redpink"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/bigThree2"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@color/redpink"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/bigThree3"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@color/redpink"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/medThree1"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:background="@color/darkblue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/medThree2"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:background="@color/darkblue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/medThree3"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:background="@color/darkblue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/smallThree1"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/blue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/smallThree2"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/blue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+
+            />
+
+        <View
+            android:id="@+id/smallThree3"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@color/blue"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

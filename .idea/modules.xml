@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CYBELE_MINI_GAMES.iml" filepath="$PROJECT_DIR$/.idea/modules/CYBELE_MINI_GAMES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CYBELE_MINI_GAMES.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CYBELE_MINI_GAMES.app.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tictactoe.ZeroKaata"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/zeroKaataTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Tic Tac Toe"
+        android:textSize="50sp"
+        android:fontFamily="@font/staat"
+        android:textColor="@color/redpink"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tttMainBoard"
+        />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="370dp"-->
+<!--        android:layout_height="370dp"-->
+<!--        android:background="@color/black"-->
+<!--        android:orientation="vertical"-->
+
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <View-->
+<!--                android:id="@+id/aa"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:background="@color/white"/>-->
+
+<!--            <View-->
+<!--                android:id="@+id/ab"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:background="@color/white"/>-->
+
+<!--            <View-->
+<!--                android:id="@+id/ac"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:background="@color/white"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <View-->
+<!--                android:id="@+id/ba"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:background="@color/white"/>-->
+
+<!--            <View-->
+<!--                android:id="@+id/bb"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="@color/white"/>-->
+
+<!--            <View-->
+<!--                android:id="@+id/bc"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:background="@color/white"/>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <View-->
+<!--                android:id="@+id/ca"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:background="@color/white"/>-->
+
+<!--            <View-->
+<!--                android:id="@+id/cb"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:background="@color/white"/>-->
+
+<!--            <View-->
+<!--                android:id="@+id/cc"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:background="@color/white"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/tttMainBoard"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:background="@color/black"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/aa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:id="@+id/ab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="20dp"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:id="@+id/ac"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="20dp"
+
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ba"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="20dp"
+
+                android:background="@color/white"/>
+
+            <ImageView
+                android:id="@+id/bb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="20dp"
+
+                android:background="@color/white"/>
+
+            <ImageView
+                android:id="@+id/bc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="20dp"
+
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ca"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="20dp"
+
+                android:background="@color/white"/>
+
+            <ImageView
+                android:id="@+id/cb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:padding="20dp"
+
+                android:background="@color/white"/>
+
+            <ImageView
+                android:id="@+id/cc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="20dp"
+
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tttStartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Start"
+        android:textSize="40sp"
+        android:fontFamily="@font/staat"
+        android:background="@drawable/tt_buttons"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+
+
+        app:layout_constraintTop_toBottomOf="@id/tttMainBoard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="onClickStart"
+        />
+
+    <TextView
+        android:id="@+id/playerOneSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Player One"
+        android:textSize="40dp"
+        android:fontFamily="@font/staat"
+        android:background="@drawable/player_ttt_bg"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tttMainBoard"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/playerTwoSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Player Two"
+        android:textSize="40dp"
+        android:fontFamily="@font/staat"
+        android:background="@drawable/player_ttt_bg"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tttMainBoard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

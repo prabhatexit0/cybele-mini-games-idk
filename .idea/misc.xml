@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/back_button.xml" value="0.23914473684210527" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3101851851851852" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/main_scr_select.xml" value="0.318859649122807" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/mainscr_buttons.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/player_one_btn.xml" value="0.23914473684210527" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/player_ttt_bgtwo.xml" value="0.23680781758957656" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/player_two_btn.xml" value="0.23914473684210527" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/popup_bg.xml" value="0.23914473684210527" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/selection_cards.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/tictactoe_btns.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/tt_buttons.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/tt_mainbg.xml" value="0.18" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout-v28/game_select.xml" value="0.23097826086956522" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/activity_hanoi_tower.xml" value="0.2" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/activity_login.xml" value="0.2062841530054645" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/activity_rockpaper.xml" value="0.28442028985507245" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/activity_select_game.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/activity_tictactoe.xml" value="0.25" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/activity_tower_of_hanoi.xml" value="0.2" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/activity_user_profile.xml" value="0.1991120218579235" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/activity_zero_kaata.xml" value="0.25" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/game_select.xml" value="0.33" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/layout/tictactoe_popup.xml" value="0.17418032786885246" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

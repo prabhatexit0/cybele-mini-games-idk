@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.Login"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@color/redpink"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/staat"
+
+        app:layout_constraintBottom_toTopOf="@+id/registerEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <EditText
+        android:id="@+id/registerUsername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/registerTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/registerEmail"
+        android:hint="Enter User Name"
+        />
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/registerUsername"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/registerPassword"
+        android:hint="Enter Email ID"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+
+        app:layout_constraintTop_toBottomOf="@id/registerEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/registerButton"
+
+        />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/tt_buttons"
+        android:text="Register"
+        android:textSize="30sp"
+        android:fontFamily="@font/staat"
+
+        app:layout_constraintTop_toBottomOf="@id/registerPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/loginAccount"/>
+
+    <TextView
+        android:id="@+id/loginAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Login Account"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+
+        app:layout_constraintTop_toBottomOf="@id/registerButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "950177816507",
+    "project_id": "cybele-mini-games",
+    "storage_bucket": "cybele-mini-games.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950177816507:android:caead474e648bdda17ee9e",
+        "android_client_info": {
+          "package_name": "com.example.cybeleminigames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950177816507-7t3qhi4jj5l6lj29q3lol34prtjo6nmh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cybeleminigames",
+            "certificate_hash": "236518bde29a1ee5ca2e5bd8014a5d200c79f32b"
+          }
+        },
+        {
+          "client_id": "950177816507-u9qt153e4r2h17qqvk9r8alvlhru4qlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZQBXuUlVDDOK8CC0GWqxlZa1x0GrHnMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950177816507-u9qt153e4r2h17qqvk9r8alvlhru4qlf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
