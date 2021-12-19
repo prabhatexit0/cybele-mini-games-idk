@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/cybele-mini-games/app/src/main/res/layout/activity_hanoi_tower.xml" value="0.28306159420289856" />
+        <entry key="..\:/AndroidProjects/cybele-mini-games/app/src/main/res/layout/activity_tower_of_hanoi.xml" value="0.28306159420289856" />
         <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/back_button.xml" value="0.23914473684210527" />
         <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3101851851851852" />
         <entry key="..\:/Users/prabh/AndroidStudioProjects/CYBELEMINIGAMES/app/src/main/res/drawable/main_scr_select.xml" value="0.318859649122807" />

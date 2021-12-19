@@ -6,10 +6,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cybeleminigames.R
-import com.example.cybeleminigames.stonepaperscissor.RockPaper
-import com.example.cybeleminigames.tictactoe.TicTacToe
 import com.example.cybeleminigames.tictactoe.ZeroKaata
-import com.example.cybeleminigames.towerofhanoi.HanoiTower
 import com.example.cybeleminigames.towerofhanoi.TowerOfHanoi
 
 class SelectGame : AppCompatActivity(), ItemClicked {
@@ -20,11 +17,10 @@ class SelectGame : AppCompatActivity(), ItemClicked {
 
         val items: ArrayList<SelectItemClass> = ArrayList()
         items.add(SelectItemClass("Tic\nTac\nToe", R.drawable.tictactoe, "zeroKaata"))
+        items.add(SelectItemClass("Tower\nOf\nHanoi", R.drawable.toiletpaper, "towerOfHanoi"))
         items.add(SelectItemClass("COMING\nSOON", R.drawable.soon, "cs2"))
         items.add(SelectItemClass("COMING\nSOON", R.drawable.soon, "cs1"))
         items.add(SelectItemClass("COMING\nSOON", R.drawable.soon, "cs3"))
-//        items.add(SelectItemClass("Rock\nPaper\nScissor", R.drawable.scissors, "rockPaperScissor"))
-//        items.add(SelectItemClass("Tower\nOf\nHanoi", R.drawable.toiletpaper, "towerOfHanoi"))
 
         val selectAdapter = SelectAdapter(items, this)
         val selectRecyclerView: RecyclerView = findViewById(R.id.selectRecyclerView)
@@ -41,7 +37,7 @@ class SelectGame : AppCompatActivity(), ItemClicked {
         val towerOfHanoi = Intent(this, TowerOfHanoi::class.java)
         when(item.ID) {
             "zeroKaata" -> startActivity(zeroKaata)
-//            "rockPaperScissor" -> startActivity(rockPapersc)
+            "towerOfHanoi" -> startActivity(towerOfHanoi)
         }
     }
 

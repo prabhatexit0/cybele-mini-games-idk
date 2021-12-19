@@ -144,7 +144,7 @@ class TowerOfHanoi : AppCompatActivity() {
             logicStackThree.pop()
         }
         else {
-            if(logicStackTwo.size == 0 && pick) {
+            if(logicStackThree.size == 0 && pick) {
                 return
             }
             if(logicStackThree.size == 0 || picked < logicStackThree.peek()) {
