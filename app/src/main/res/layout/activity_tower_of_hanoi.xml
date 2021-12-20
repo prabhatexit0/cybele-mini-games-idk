@@ -304,6 +304,8 @@
 
     </RelativeLayout>
 
+
+
     <RelativeLayout
         android:id="@+id/towerThree"
         android:layout_width="match_parent"
@@ -317,26 +319,26 @@
         <View
             android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:background="@color/black"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:background="@color/black" />
 
         <View
             android:layout_width="250dp"
             android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:background="@color/black"
-            android:layout_alignParentBottom="true"/>
+            android:background="@color/black" />
 
 
         <View
             android:id="@+id/bigThree1"
             android:layout_width="100dp"
             android:layout_height="20dp"
-            android:background="@color/redpink"
+            android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginBottom="10dp"
+            android:background="@color/redpink"
             android:visibility="gone"
 
             />
@@ -345,11 +347,11 @@
             android:id="@+id/bigThree2"
             android:layout_width="100dp"
             android:layout_height="20dp"
-            android:background="@color/redpink"
+            android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginBottom="30dp"
+            android:background="@color/redpink"
             android:visibility="gone"
 
             />
@@ -358,11 +360,11 @@
             android:id="@+id/bigThree3"
             android:layout_width="100dp"
             android:layout_height="20dp"
-            android:background="@color/redpink"
+            android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginBottom="50dp"
+            android:background="@color/redpink"
             android:visibility="gone"
 
             />
@@ -371,11 +373,11 @@
             android:id="@+id/medThree1"
             android:layout_width="70dp"
             android:layout_height="20dp"
-            android:background="@color/darkblue"
+            android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginBottom="10dp"
+            android:background="@color/darkblue"
             android:visibility="gone"
 
             />
@@ -384,11 +386,11 @@
             android:id="@+id/medThree2"
             android:layout_width="70dp"
             android:layout_height="20dp"
-            android:background="@color/darkblue"
+            android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginBottom="30dp"
+            android:background="@color/darkblue"
             android:visibility="gone"
 
             />
@@ -397,11 +399,11 @@
             android:id="@+id/medThree3"
             android:layout_width="70dp"
             android:layout_height="20dp"
-            android:background="@color/darkblue"
+            android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginBottom="50dp"
+            android:background="@color/darkblue"
             android:visibility="gone"
 
             />
@@ -410,11 +412,11 @@
             android:id="@+id/smallThree1"
             android:layout_width="50dp"
             android:layout_height="20dp"
-            android:background="@color/blue"
+            android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginBottom="10dp"
+            android:background="@color/blue"
             android:visibility="gone"
 
             />
@@ -423,11 +425,11 @@
             android:id="@+id/smallThree2"
             android:layout_width="50dp"
             android:layout_height="20dp"
-            android:background="@color/blue"
+            android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginBottom="30dp"
+            android:background="@color/blue"
             android:visibility="gone"
 
             />
@@ -436,21 +438,49 @@
             android:id="@+id/smallThree3"
             android:layout_width="50dp"
             android:layout_height="20dp"
-            android:background="@color/blue"
+            android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginBottom="50dp"
-            android:visibility="gone"
-
-
-            />
-
-
-
+            android:background="@color/blue"
+            android:visibility="gone" />
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/gameOverToh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAME OVER!\nYou Won!"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:fontFamily="@font/staat"
+        android:textColor="@color/black"
 
+        android:visibility="gone"
+
+        android:layout_below="@+id/towerThree"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/resetToh"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="RESET"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/redpink"
+
+        android:layout_below="@+id/gameOverToh"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:visibility="gone"
+
+        android:onClick="clickResetToh"/>
 
 
 </RelativeLayout>

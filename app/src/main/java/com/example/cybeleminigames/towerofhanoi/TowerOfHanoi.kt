@@ -1,8 +1,12 @@
 package com.example.cybeleminigames.towerofhanoi
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.RelativeLayout
+import android.widget.TextView
 import android.widget.Toast
 import com.example.cybeleminigames.R
 import java.util.*
@@ -153,5 +157,18 @@ class TowerOfHanoi : AppCompatActivity() {
                 pick = true
             }
         }
+
+        if(logicStackThree.size == 3) {
+            findViewById<RelativeLayout>(R.id.towerOne).visibility = View.GONE
+            findViewById<RelativeLayout>(R.id.towerTwo).visibility = View.GONE
+            findViewById<TextView>(R.id.gameOverToh).visibility = View.VISIBLE
+            findViewById<Button>(R.id.resetToh).visibility = View.VISIBLE;
+        }
+    }
+
+    fun clickResetToh(view: android.view.View) {
+        val toh: Intent = Intent(this, TowerOfHanoi::class.java)
+        finish()
+        startActivity(toh)
     }
 }
