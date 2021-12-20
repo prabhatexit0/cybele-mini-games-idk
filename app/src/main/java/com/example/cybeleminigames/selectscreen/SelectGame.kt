@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cybeleminigames.R
+import com.example.cybeleminigames.fingerbattle.FingerBattle
 import com.example.cybeleminigames.tictactoe.ZeroKaata
 import com.example.cybeleminigames.towerofhanoi.TowerOfHanoi
 
@@ -18,7 +19,7 @@ class SelectGame : AppCompatActivity(), ItemClicked {
         val items: ArrayList<SelectItemClass> = ArrayList()
         items.add(SelectItemClass("Tic\nTac\nToe", R.drawable.tictactoe, "zeroKaata"))
         items.add(SelectItemClass("Tower\nOf\nHanoi", R.drawable.toiletpaper, "towerOfHanoi"))
-        items.add(SelectItemClass("COMING\nSOON", R.drawable.soon, "cs2"))
+        items.add(SelectItemClass("FINGER\nBATTLE", R.drawable.soon, "cs2"))
         items.add(SelectItemClass("COMING\nSOON", R.drawable.soon, "cs1"))
         items.add(SelectItemClass("COMING\nSOON", R.drawable.soon, "cs3"))
 
@@ -35,9 +36,11 @@ class SelectGame : AppCompatActivity(), ItemClicked {
     override fun onItemClicked(item: SelectItemClass) {
         val zeroKaata = Intent(this, ZeroKaata::class.java)
         val towerOfHanoi = Intent(this, TowerOfHanoi::class.java)
+        val fingerbattle = Intent(this, FingerBattle::class.java)
         when(item.ID) {
             "zeroKaata" -> startActivity(zeroKaata)
             "towerOfHanoi" -> startActivity(towerOfHanoi)
+            "cs2" -> startActivity(fingerbattle)
         }
     }
 

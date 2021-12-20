@@ -6,4 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".fingerbattle.FingerBattle">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/fingerPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/yellow"/>
+
+        <View
+            android:id="@+id/fingerPlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/redpink"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/fingerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finger Battle"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/staat"
+        android:textColor="@color/redpink"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/fingerButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@color/yellow"
+
+        android:text="START"
+        android:fontFamily="@font/staat"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:onClick="fingerStart"
+        />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
